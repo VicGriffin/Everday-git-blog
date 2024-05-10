@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git.</title>
+    <link rel="icon" href="assets/gitlogo.jpeg">
+</head>
+<body>
+    <img src="assets/gitlogo.jpeg" alt="gitlogo" width="50pxs">
+    <h1>What is Git </h1>   
+    <p><h2>Introduction:</h2>
+        In the ever-evolving landscape of software development, version control systems (VCS) are the backbone of efficient collaboration and code management. Among these, Git reigns supreme, paired seamlessly with GitHub, a platform that revolutionizes the way developers work together. In this blog, we embark on a journey to demystify Git and GitHub, unraveling their significance and exploring their practical applications in the world of version control.</p> 
+        <h3>Understanding Version Control Systems:</h3>
+        
+        <p>
+            Before getting into the specifics of Git, it's crucial to understand the fundamental concept of version control systems. Imagine you're working on a project—a website, an app, or any software endeavor. As you make changes to the codebase, it's essential to keep track of these modifications systematically. Here comes the role of a version control system.
+            <br>
+            A version control system allows developers to manage changes to their codebase over time. It serves as a safeguard against errors, facilitating collaboration among team members, and providing a mechanism to revert to previous versions if necessary. Essentially, it ensures the integrity and coherence of the project throughout its lifecycle.</p>
+           <br>
+           <strong>Introductory vedio:</strong>
+           <br> 
+        <video controls  height="400">
+            <source src="assets/introduction.mp4" type="video/mp4">
+          </video>
+            <h3>GIT:</h3>
+            <p>Git, developed by Linus Torvalds in 2005, has transformed the way developers handle version control. Unlike traditional centralized systems, Git is distributed, meaning every developer has a complete copy of the repository, enabling seamless collaboration and offline work.</p>
+
+            <h2>Installing Git</h2>
+            <p><strong>First you need to check if Git is installed on your machine.</strong> To do this:<br>
+                <ol><li><strong>Open a terminal or command prompt:</strong> Depending on your operating system, you can find a terminal or command prompt application. On Windows, you can search for "Command Prompt" on the start menu. <br>
+                <img src="assets/cmd .jpg" alt="cmd" width="300pxs"></li><br>
+                    <li><strong>Check for Git installation:</strong> In the terminal or command prompt, type <em> "git --version"</em>
+            command and press Enter- This command checks if Git is installed and prints its version if it is installed.</li>
+        <img src="assets/gitversion.jpg" alt="git check" >Checking whether git is installed</p>
+        <li><strong>Interpreting the output:</strong>If Git is installed, you'll see output similar to this: git version 2.33.1. This means Git is installed, and you can start using it.
+        <br>If Git is not installed, you'll likely see an error message stating that the command 'git' is not recognized. In this case, you need to download and install Git.
+        </li>
+    </ol>
+    <p>
+        <strong>If Git is not installed, here's how you can download and install it:</strong>
+        <ol>
+            <li>Go to the official Git website: Git for Windows.
+            </li>
+            <li>
+                Click on the "Download" button to download the latest version of Git for Windows.
+            </li>
+            <li>
+                Once the download is complete, run the installer.
+            </li>
+            <li>
+                Follow the installation instructions, accepting the default settings unless you have a specific reason to change them.
+            </li>
+            <li>
+                After the installation is complete, you should be able to use Git from the command prompt.
+            </li>
+        </ol>
+<br> <video controls width="600" height="400">
+    <source src="assets/sample.mp4" type="video/mp4">
+   
+  </video> <br> <p>simple explanation</p>
+        <h2>Configuring Git</h2>
+        <ol>
+            <li><strong>Open a terminal or command prompt:</strong> Just like before, open a terminal or command prompt on your computer.</li>
+            <li>
+                <strong>Set your username: </strong>To set your username, use <em>git config --global user.name "Your Name"</em>
+                " command: <br>
+                <img src="assets/set your name.jpg" alt="set your name"> <br>Replace "Your Name" with your actual name, enclosed in double quotes. This command sets your username globally, so it will be used for all repositories on your machine.
+            </li>
+            <li>
+                <strong>Set your email address: </strong>To set your email address, use <em>git config --global user.email "your.email@example.com"</em>
+                command <br>
+                <img src="assets/set your email.jpg" alt="set your email">
+                <br>Replace "your.email@example.com" with your actual email address. Like setting the username, this command sets your email address globally for all repositories on your machine.
+            </li>
+        </ol><br>
+        
+        <br> 
+        <h2>GIT REPOSITORY</h2>
+        <h3>What is a Git Repository?</h3><p>A Git repository, often referred to simply as "repo," is a directory or storage location where your project's files and version history are stored. It's essentially a database that tracks changes to files over time. Git repositories enable collaboration, version control, and the ability to revert to previous states of your project.</p>
+        <h3>How to Initialize a Git Repository:</h3><p>To initialize a Git repository for your project, follow these steps:</p>
+        <ol>
+            <li>
+                <strong>Navigate to your project directory: </strong>Open a terminal or command prompt where your project files are located</li>
+                <li>
+                    <strong>Initialize the Git repository: </strong>Once you're in your project directory, run <em>"git init"</em>
+                    command to initialize a new Git repository:
+                    <br><img src="assets/git init.jpg" alt="git init"><br>This command initializes a new Git repository in the current directory. Git will create a hidden directory called <strong> .git</strong>, which stores all the version control information for your project.
+                </li>
+                <li>
+                    <strong>Add your project files to the repository: </strong>After initializing the repository, you need to add your project files to it. You can add all files in the directory using <em>git add .</em>
+                    command <br><img src="assets/git add.jpg" alt="git add">
+                    <br>The <em> ' . '</em>symbol means "all files." Alternatively, you can specify individual files or directories to add.
+                </li>
+                <li>
+                    <strong>Commit your changes: </strong>Once you've added your files, you need to commit them to the repository. This creates a snapshot of your project at its current state. Use <em> 'git commit -m "Initial commit" '</em>
+                    command to commit
+                    <br> <img src="assets/git commit.jpg" alt="git commit">
+                    <br>Replace <em> ' "Initial commit" '</em>' with a descriptive message that explains the changes you're committing. This message helps you and others understand the purpose of the commit.
+                </li>
+
+        </ol>
+        <h2>BRANCHES</h2>
+        <p>In Git, a branch is essentially a parallel version of your repository. It's like a separate timeline of changes that diverges from the main line of development (often called the "master" branch). Each branch can have its own commits, allowing you to work on different features, bug fixes, or experiments without affecting the main project until you're ready to merge your changes.</p>
+        <h3>Creating a branch</h3>
+        <ol>
+            <li>
+                <strong>Ensure you're on the main branch (optional): </strong>Before creating a new branch, it's a good practice to ensure that you're on the branch from which you want to create the new branch. Typically, this would be the main branch (e.g.,<em> master or main</em>). You can check your current branch by running <em>git branch
+                </em> command.
+                <br><img src="assets/git branch.jpg" alt="git branch"> <br>
+                This command is also used to view all Branches.
+            </li>
+            <br>
+            <li>
+                <strong>Create a new branch: </strong>To create a new branch, use the git branch command followed by the name you want to give to your new branch <em> 'git branch feature-branch
+                '</em>. For example, if you want to create a branch named <em> 'feature-branch'</em> <br>
+                <img src="assets/git branch name.jpg" alt="git branch name">
+                <br>This command creates a new branch named <em>'feature-branch' </em> based on the current state of your repository. However, it doesn't switch you to that branch yet.
+            </li>
+            <br>
+            <li>
+                <strong> To Switch to the new branch: </strong>If you want to start working on the newly created branch immediately, you can switch to it using the <em> 'git checkout' </em>command.This command switches you to the feature-branch, allowing you to start making changes and commits on this branch.
+                <br>
+                <img src="assets/git checkout.jpg" alt="git checkout">
+            </li>
+            <h3>Merging Branches</h3>
+            <ol>
+                <li>
+                    <strong>Ensure you're on the branch where you want to merge changes:</strong> Before merging branches, make sure you're on the branch where you want to integrate changes. For example, if you want to merge changes from a feature branch into the main branch (master or main), switch to the main branch using the <em> 'git checkout' </em>command
+                    <br><img src="assets/git main checkout.jpg" alt="git checkout main"> <br>Replace <em> 'main' </em>with the name of your main branch if it's different.
+                </li>
+                <br>
+                <li>
+                    <strong>Merge the branch:</strong> Once you're on the target branch, you can merge changes from another branch using the git merge command followed by the name of the branch you want to merge. For example, if you want to merge changes from a branch named feature-branch into the main branch
+                    <br><img src="assets/git merge.jpg" alt="git merge"> <br>This command will merge the changes from feature-branch into the current branch
+                </li>
+                <br>
+                <li>
+                    <strong>Resolve conflicts (if any): </strong>If Git encounters conflicts during the merge, it will pause the process and notify you which files have conflicts. You'll need to manually resolve these conflicts by editing the conflicting files, marking the conflicts as resolved, and then completing the merge.
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        Commit the merge: 
+                    </strong>After resolving any conflicts, you need to commit the merge to finalize it. Git automatically creates a merge commit to record the merge operation. Simply use the <em> 'git commit </em>command to commit the merge
+                    <br><img src="assets/git commit 2.jpg" alt="git commit"> <br>This will open your default text editor to enter a commit message for the merge commit.
+                </li>
+            </ol>
+        </ol>
+        <h2>Deleting a Branch</h2>
+        <ul>
+            <li>
+                <strong>
+                    Delete the branch:
+                </strong> To delete a branch, use the git branch -d command followed by the name of the branch you want to delete. For example, if you want to delete a branch named feature-branch it would be ' <em>git branch -d feature-branch
+                </em> ' <br><img src="assets/delete branch.jpg" alt="delete branch">
+            </li>
+        </ul>
+
+        <h3>ADVISORY</h3>
+        <P>After learning about basic Git commands like initializing a repository, creating branches, merging branches, and deleting branches, there are several next steps you can take to deepen your understanding of Git and enhance your workflow:
+            <ul>
+
+           <li> Learn about Git Remote: Git remote allows you to connect your local repository to remote repositories hosted on platforms like GitHub, GitLab, or Bitbucket. You can learn how to add, remove, and manage remote repositories, as well as how to push and pull changes between your local repository and remote repositories.</li>
+            <li>
+            Explore Git Collaboration Workflows: Git offers various collaboration workflows for teams working on the same project. Learn about popular workflows like Centralized Workflow, Feature Branch Workflow, Gitflow Workflow, and Forking Workflow. Understanding these workflows will help you collaborate more effectively with other developers.</li>
+            <li>
+            Master Git Branching Strategies: Branching is a powerful feature of Git, and there are several branching strategies you can adopt based on your project's needs. Learn about branching strategies like feature branching, release branching, and hotfix branching. Understanding these strategies will help you organize and manage your project's development process. <li>
+            Familiarize Yourself with Git Tools: Git offers a wide range of tools and utilities to enhance your workflow. Explore tools like Git GUI clients (e.g., GitKraken, Sourcetree), Git IDE integrations (e.g., Visual Studio Code, IntelliJ IDEA), and Git extensions (e.g., Git LFS for large files, Git Submodules for managing dependencies). Experimenting with these tools will help you find the ones that best suit your workflow.
+            </li>
+            <li>
+            Contribute to Open Source Projects: Contributing to open-source projects is a great way to apply your Git skills in real-world scenarios and collaborate with other developers. Look for projects that interest you on platforms like GitHub and start contributing by fixing bugs, adding features, or improving documentation.</li>
+        </ul>
+        </P>
+
+    </p>
+            <p><h3>key features that make Git a preferred choice for developers worldwide:</h3>
+                <ul>
+
+               <li>Speed and Efficiency: Git's lightweight design and efficient branching model enable lightning-fast operations, making it ideal for projects of any scale.</li>
+                <li>Flexibility: With Git, developers have the freedom to work offline, experiment with different features, and collaborate seamlessly across distributed teams.</li>
+                <li>Branching and Merging: Git's branching and merging capabilities empower developers to work on multiple features concurrently, facilitating parallel development workflows.</li>
+                <li>Data Integrity: Git employs cryptographic hashing to ensure the integrity of the repository, providing a robust and secure version control solution.</li></p>
+            </ul>
+
+            <form>
+                <div>
+                <label for="fname">First Name</label>
+                <input type="text" name="first name" id="fname" placeholder="First name">
+                </div>
+                <br>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="Last name" id="Last name" placeholder="Last name">
+                </div> <br>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="EMAIL">
+                </div> <br>
+                <div>
+                    <label for="">RANK THE LEARNING EXPERIENCE</label>
+                    <input type="range" name="RANK" id="RANK">
+                    
+                </div> <br>
+                <div>
+                    <button type="submit">SUBMIT</button>
+                </div>
+
+                
+            </form>
+</body>
+</html>
